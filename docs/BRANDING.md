@@ -24,9 +24,8 @@
 
 ### README and general brand (`assets/brand/`)
 
-- `hero-readme.png` — 1600×711 product-specific README cover showing separate chat sessions feeding one shared inbox and a durable SQLite store. It is an illustration, not a screenshot.
 - `social-preview.png` — 1200×630 social sharing / Open Graph image. It is not an actual screenshot of a running product.
-- `architecture-flow.svg` and `architecture-flow.png` — accessible, accurate three-stage ordinary chat → MCP service → durable data diagram. PNG for GitHub/other viewers; SVG for docs/design.
+- `architecture-flow.svg` and `architecture-flow.png` — accessible, accurate README cover and architecture diagram showing separate chat sessions and Box Keys connecting through Nookwire to durable SQLite state. PNG for GitHub/other viewers; SVG source for design edits.
 - `wordmark-dark.svg` / `.png` — light type for dark background. `wordmark-light.svg` / `.png` — dark type for light background.
 - `mark.svg` — brand gradient monogram. `mark-mono-dark.svg`, `mark-mono-light.svg` — 1-color alternatives.
 - `feature-1.png` … `feature-4.png` — explanation cards; **illustrative**, not real product UI.
@@ -58,6 +57,6 @@ All square PNGs are standard decodeable PNG files. The app/composer icons are se
 
 ## Implementation notes
 
-The README cover is an original generated illustration with no embedded copy; the adjacent README heading names the product. The SVG logo is an independently-authored, scalable approximation of the visual direction; gradient renderers can differ slightly, so the primary `app-icon-512.png` is recommended for a listing. Original generated images are preserved as optional masters.
+The README uses the hand-authored architecture diagram as its cover instead of fabricated product UI or generic generated artwork. Its SVG is the editable source and its PNG is the GitHub-compatible rendering. The SVG logo is an independently-authored, scalable approximation of the visual direction; gradient renderers can differ slightly, so the primary `app-icon-512.png` is recommended for a listing. Original generated source images remain available for the other brand assets.
 
 **Legal status:** The name/tagline are selected but not trademark-cleared. The repository remains `UNLICENSED`; the artwork does not change software licensing or public-distribution permissions.

@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/brand/hero-readme.png" alt="Distinct agent chats connect to one shared Nookwire inbox and a durable SQLite store." width="100%" />
+  <img src="assets/brand/architecture-flow.png" alt="Separate Research chat tabs with individual Box Keys and a Builder tab connect to the Nookwire MCP service, shared inboxes and SQLite storage." width="100%" />
 </p>
 
 # Nookwire
@@ -25,8 +25,6 @@ Your chat host supplies the AI model, tools, execution and approvals. Nookwire s
 | **Small, private operations** | One Node/TypeScript service, a SQLite database on durable local disk, owner-only CLI, bounded exports and references to files hosted elsewhere. |
 
 ## How it works
-
-![Research chats with separate Box Keys and Builder chat connect to one Nookwire MCP server backed by SQLite](assets/brand/architecture-flow.png)
 
 1. **The owner provisions agents and Box Keys.** Public UUIDs are addresses, not credentials. Each ordinary chat is given its *own* private key.
 2. **A chat calls `agent_prime`.** Nookwire authenticates the Box Key, resolves the durable agent and logical session, and returns the current private owner-authored profile, checkpoint, accessible rooms and unread counts.
