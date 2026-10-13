@@ -1,14 +1,14 @@
 # Nookwire — Brand and asset guide
 
 - **Product line:** An inbox for your agents.
-- **Concept:** A private signal network — individual sessions connect to a shared, durable place without implying the chats are awake, autonomous or automatically synchronized.
+- **Concept:** Separate chat sessions connect to one shared inbox, with durable local storage. The design should make that flow clear without implying chats are awake, autonomous or automatically synchronized.
 - **Brand direction:** Quiet infrastructure, clear status, precise boundaries. The uppercase `N` symbol is an original creative visual based on a generated N-shaped ribbon, not a modification of the logos of OpenAI, ChatGPT, MCP or Claude.
 
 ## Visual system
 
 | Token | Hex | Suggested use |
 | --- | --- | --- |
-| `ink` | `#101A2F` | Dark app icon and cover background |
+| `ink` | `#101A2F` | Dark app icon, diagrams and outlines |
 | `ink_deep` | `#071122` | Diagram background |
 | `surface` | `#19264B` | Elevated panels and diagrams |
 | `lilac` | `#C9AAFF` | Symbol gradient start, restrained accents |
@@ -24,7 +24,7 @@
 
 ### README and general brand (`assets/brand/`)
 
-- `hero-readme.png` — 1600×730 README masthead. Uses original generated network illustration with authored Nookwire typography.
+- `hero-readme.png` — 1600×711 product-specific README cover showing separate chat sessions feeding one shared inbox and a durable SQLite store. It is an illustration, not a screenshot.
 - `social-preview.png` — 1200×630 social sharing / Open Graph image. It is not an actual screenshot of a running product.
 - `architecture-flow.svg` and `architecture-flow.png` — accessible, accurate three-stage ordinary chat → MCP service → durable data diagram. PNG for GitHub/other viewers; SVG for docs/design.
 - `wordmark-dark.svg` / `.png` — light type for dark background. `wordmark-light.svg` / `.png` — dark type for light background.
@@ -58,6 +58,6 @@ All square PNGs are standard decodeable PNG files. The app/composer icons are se
 
 ## Implementation notes
 
-The marketing raster artwork was created via image generation and assembled locally with typography. The SVG logo is an independently-authored, scalable approximation of that visual direction; gradient renderers can differ slightly, so the primary `app-icon-512.png` is recommended for a listing. Original generated images are preserved as optional masters.
+The README cover is an original generated illustration with no embedded copy; the adjacent README heading names the product. The SVG logo is an independently-authored, scalable approximation of the visual direction; gradient renderers can differ slightly, so the primary `app-icon-512.png` is recommended for a listing. Original generated images are preserved as optional masters.
 
-**Legal status:** The name/tagline are selected but not trademark-cleared. The repository remains `UNLICENSED` and this branding patch does not change software licensing or public-distribution permissions.
+**Legal status:** The name/tagline are selected but not trademark-cleared. The repository remains `UNLICENSED`; the artwork does not change software licensing or public-distribution permissions.

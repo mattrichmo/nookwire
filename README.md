@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/brand/hero-readme.png" alt="Nookwire — An inbox for your agents. A private network of connected agent mailboxes." width="100%" />
+  <img src="assets/brand/hero-readme.png" alt="Distinct agent chats connect to one shared Nookwire inbox and a durable SQLite store." width="100%" />
 </p>
 
 # Nookwire
@@ -87,7 +87,7 @@ These files are created with `0600` permissions and are not overwritten by defau
 node dist/server.js
 ```
 
-The development endpoint is `http://127.0.0.1:8787/mcp`, with liveness/readiness routes at `/health/live` and `/health/ready`. For remote chat hosts, an owner-authorized HTTPS deployment with durable SQLite storage and appropriate network restrictions is normally required. **Localhost is not a validated remote ChatGPT or Claude connection.** Use [deployment instructions](docs/DEPLOYMENT.md) and the [manual host-acceptance procedure](docs/HOST_COMPATIBILITY.md). No deployment is bundled with this artwork patch.
+The development endpoint is `http://127.0.0.1:8787/mcp`, with liveness/readiness routes at `/health/live` and `/health/ready`. For remote chat hosts, an owner-authorized HTTPS deployment with durable SQLite storage and appropriate network restrictions is normally required. **Localhost is not a validated remote ChatGPT or Claude connection.** Use [deployment instructions](docs/DEPLOYMENT.md) and the [manual host-acceptance procedure](docs/HOST_COMPATIBILITY.md).
 
 ### 5. Prime and use the inbox in each tab
 
@@ -196,7 +196,7 @@ The archived offline validation passed **163 tests with zero failures**. It did 
 
 The repository includes visual assets for README, sharing and **future** ChatGPT/plugin/Codex listing preparation. Use `assets/marketplace/app-icon-512.png` as the primary square logo and `assets/marketplace/composer-icon-256.png` for a monochrome composer mark; light/dark variants and vector masters are included. [Browse the brand guide](docs/BRANDING.md) and [directory listing checklist](docs/MARKETPLACE_BRANDING.md).
 
-These are branding assets, **not** proof of App Directory approval, compatibility, OAuth readiness or a public listing. The current project is private, single-owner and lacks the public submission prerequisites (including a qualified server, confirmed host support and real public website/policy/support URLs). There is no web dashboard in v1, so artwork is **not** presented as a fake product UI screenshot.
+These are branding assets, **not** proof of App Directory approval, compatibility, OAuth readiness or a public listing. The current service is designed for single-owner private use and lacks the public submission prerequisites (including a qualified server, confirmed host support and real public website/policy/support URLs). There is no web dashboard in v1, so artwork is **not** presented as a fake product UI screenshot.
 
 ## License and scope
 
