@@ -1,0 +1,49 @@
+{
+  "name": "nookwire",
+  "version": "1.0.0-rc.1",
+  "private": true,
+  "type": "module",
+  "description": "An inbox for your agents.",
+  "engines": {
+    "node": ">=22.16.0 <27"
+  },
+  "bin": {
+    "nookwire": "dist/cli.js"
+  },
+  "scripts": {
+    "bootstrap": "node scripts/bootstrap.mjs",
+    "build": "tsc -p tsconfig.json && node scripts/copy-assets.mjs",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "node --test tests/*.test.mjs",
+    "test:core": "node --test tests/core.test.mjs tests/security.test.mjs tests/concurrency.test.mjs tests/pagination.test.mjs tests/operations.test.mjs",
+    "test:mcp": "node --test tests/mcp.test.mjs",
+    "test:offline": "NOOKWIRE_TEST_DRIVER=node node --test tests/core.test.mjs tests/security.test.mjs tests/concurrency.test.mjs tests/pagination.test.mjs tests/operations.test.mjs",
+    "start": "node dist/server.js",
+    "cli": "node dist/cli.js",
+    "verify": "node scripts/release-gate.mjs",
+    "stress": "node scripts/stress.mjs",
+    "contracts": "node scripts/export-contracts.mjs",
+    "demo": "node scripts/demo.mjs",
+    "demo:offline": "NOOKWIRE_TEST_DRIVER=node node scripts/demo.mjs"
+  },
+  "license": "UNLICENSED",
+  "dependencies": {
+    "@modelcontextprotocol/server": "^2.0.0",
+    "@modelcontextprotocol/node": "^2.0.0",
+    "@modelcontextprotocol/express": "^2.0.0",
+    "better-sqlite3": "13.0.3",
+    "express": "5.3.0",
+    "zod": "^4.0.0"
+  },
+  "devDependencies": {
+    "@modelcontextprotocol/client": "^2.0.0",
+    "@types/node": "^24.0.0",
+    "typescript": "5.8.3"
+  },
+  "nookwireBuildStatus": {
+    "releaseQualified": false,
+    "dependencyStatus": "SDK/Zod/type versions are unresolved major-line requirements, not claimed exact pins. Run bootstrap on a networked Node 24.21.0 environment to select/install exact stable versions and create a genuine lockfile.",
+    "productionDriver": "better-sqlite3",
+    "offlineEvidenceDriver": "Test-only node:sqlite adapter (never selected by production)."
+  }
+}

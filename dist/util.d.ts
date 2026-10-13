@@ -1,0 +1,13 @@
+export declare const MAX_I64 = 9223372036854775807n;
+export declare const uuidPattern: RegExp;
+export declare const tokenPattern: RegExp;
+export declare const bytes: (value: unknown) => number;
+export declare const sha256: (value: string | Buffer) => string;
+export declare function sequence(value: unknown): bigint;
+export declare function canonical(value: any): string;
+export declare function jsonSafe(value: any): any;
+export declare function assertNoCredentials(value: unknown): void;
+export declare function validateJson(value: unknown, maxBytes: number, maxDepth?: number): void;
+export declare function assertRevision(actual: bigint | number, expected: string): void;
+export declare function safeUrl(value: string): void;
+export declare function iso(ms: number): string;

@@ -1,0 +1,8 @@
+{
+  "operation": "npm view @modelcontextprotocol/server version --fetch-retries=0 --fetch-timeout=8000",
+  "result": "failed",
+  "error_code": "EAI_AGAIN",
+  "hostname": "registry.npmjs.org",
+  "production_packages_installed": false,
+  "lockfile_generated": false
+}

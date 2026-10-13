@@ -1,0 +1,1054 @@
+TAP version 13
+# (node:2193) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# (node:2193) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# (node:2193) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# (node:2193) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# (node:2193) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: Concurrent Prime on independent SQLite connections produces one session
+ok 1 - Concurrent Prime on independent SQLite connections produces one session
+  ---
+  duration_ms: 264.969466
+  type: 'test'
+  ...
+# (node:2193) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# (node:2193) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# (node:2193) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# (node:2193) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# (node:2193) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: Concurrent identical sends commit one canonical message and one attention row
+ok 2 - Concurrent identical sends commit one canonical message and one attention row
+  ---
+  duration_ms: 331.407427
+  type: 'test'
+  ...
+# (node:2193) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# (node:2193) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: Concurrent differing payloads under same mutation ID conflict deterministically
+ok 3 - Concurrent differing payloads under same mutation ID conflict deterministically
+  ---
+  duration_ms: 122.599472
+  type: 'test'
+  ...
+# (node:2193) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# (node:2193) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: Concurrent checkpoint CAS has one winner and no overwrite
+ok 4 - Concurrent checkpoint CAS has one winner and no overwrite
+  ---
+  duration_ms: 128.475735
+  type: 'test'
+  ...
+# (node:2193) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# (node:2193) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: Concurrent owner profile CAS produces one new immutable version
+ok 5 - Concurrent owner profile CAS produces one new immutable version
+  ---
+  duration_ms: 135.781017
+  type: 'test'
+  ...
+# (node:2193) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# (node:2193) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: Concurrent pinned brief CAS has one append
+ok 6 - Concurrent pinned brief CAS has one append
+  ---
+  duration_ms: 157.136105
+  type: 'test'
+  ...
+# (node:2193) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# (node:2193) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: Concurrent declaration CAS rolls back losing response and attention
+ok 7 - Concurrent declaration CAS rolls back losing response and attention
+  ---
+  duration_ms: 315.184559
+  type: 'test'
+  ...
+# (node:2193) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# (node:2193) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: Joining while a room send commits yields a serialized visibility boundary
+ok 8 - Joining while a room send commits yields a serialized visibility boundary
+  ---
+  duration_ms: 335.395995
+  type: 'test'
+  ...
+# (node:2193) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# (node:2193) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: Removal racing a mention either commits before removal or rejects atomically
+ok 9 - Removal racing a mention either commits before removal or rejects atomically
+  ---
+  duration_ms: 136.893225
+  type: 'test'
+  ...
+# (node:2193) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# (node:2193) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: Revocation racing a write never allows a later authorization snapshot
+ok 10 - Revocation racing a write never allows a later authorization snapshot
+  ---
+  duration_ms: 323.408257
+  type: 'test'
+  ...
+# (node:2193) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# (node:2193) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: Independent connection lock contention is bounded and whole-transaction retried
+ok 11 - Independent connection lock contention is bounded and whole-transaction retried
+  ---
+  duration_ms: 258.718795
+  type: 'test'
+  ...
+# Subtest: Injected SQLITE_BUSY retries the complete transaction without duplicate quota
+ok 12 - Injected SQLITE_BUSY retries the complete transaction without duplicate quota
+  ---
+  duration_ms: 17.302042
+  type: 'test'
+  ...
+# Subtest: Transactional auth revalidation sees revocation after request quota snapshot
+ok 13 - Transactional auth revalidation sees revocation after request quota snapshot
+  ---
+  duration_ms: 10.465622
+  type: 'test'
+  ...
+# (node:2193) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# (node:2194) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: Full twelve-step acceptance story across Research R1/R2 and Builder B1
+ok 14 - Full twelve-step acceptance story across Research R1/R2 and Builder B1
+  ---
+  duration_ms: 91.334456
+  type: 'test'
+  ...
+# Subtest: Repeated Prime preserves original labels and one session
+ok 15 - Repeated Prime preserves original labels and one session
+  ---
+  duration_ms: 11.468186
+  type: 'test'
+  ...
+# Subtest: Shared inbox ACK requires per-session receipt and preserves first provenance
+ok 16 - Shared inbox ACK requires per-session receipt and preserves first provenance
+  ---
+  duration_ms: 29.007361
+  type: 'test'
+  ...
+# Subtest: Prime, message get, history, and export do not ACK
+ok 17 - Prime, message get, history, and export do not ACK
+  ---
+  duration_ms: 34.849454
+  type: 'test'
+  ...
+# Subtest: Message get records a session receipt but thread export does not
+ok 18 - Message get records a session receipt but thread export does not
+  ---
+  duration_ms: 12.960631
+  type: 'test'
+  ...
+# Subtest: Lost-response replay survives restart and keeps original author session
+ok 19 - Lost-response replay survives restart and keeps original author session
+  ---
+  duration_ms: 17.480645
+  type: 'test'
+  ...
+# Subtest: Different agents can use the same mutation ID independently
+ok 20 - Different agents can use the same mutation ID independently
+  ---
+  duration_ms: 10.853564
+  type: 'test'
+  ...
+# Subtest: Idempotency conflicts are atomic
+ok 21 - Idempotency conflicts are atomic
+  ---
+  duration_ms: 10.759894
+  type: 'test'
+  ...
+# Subtest: Canonical JSON and sorted target sets replay equivalently
+ok 22 - Canonical JSON and sorted target sets replay equivalently
+  ---
+  duration_ms: 13.799533
+  type: 'test'
+  ...
+# Subtest: Profile history is private, immutable, versioned, and checkpoint CAS is shared
+ok 23 - Profile history is private, immutable, versioned, and checkpoint CAS is shared
+  ---
+  duration_ms: 22.811125
+  type: 'test'
+  ...
+# Subtest: Stale profiles permit reads ACK follow and file reports but not content changes
+ok 24 - Stale profiles permit reads ACK follow and file reports but not content changes
+  ---
+  duration_ms: 19.115093
+  type: 'test'
+  ...
+# Subtest: Committed replay works after profile changes without executing new content
+ok 25 - Committed replay works after profile changes without executing new content
+  ---
+  duration_ms: 13.824713
+  type: 'test'
+  ...
+# Subtest: Directory opt-in stays separate from private profile and known unlisted IDs accept DMs
+ok 26 - Directory opt-in stays separate from private profile and known unlisted IDs accept DMs
+  ---
+  duration_ms: 74.859791
+  type: 'test'
+  ...
+# Subtest: Directory search escapes wildcard characters and is not SQL
+ok 27 - Directory search escapes wildcard characters and is not SQL
+  ---
+  duration_ms: 22.794549
+  type: 'test'
+  ...
+# Subtest: Schedules remain data across profile load and restart
+ok 28 - Schedules remain data across profile load and restart
+  ---
+  duration_ms: 55.36112
+  type: 'test'
+  ...
+# Subtest: Response declaration exact-recipient authorization, CAS and no work-ACK coupling
+ok 29 - Response declaration exact-recipient authorization, CAS and no work-ACK coupling
+  ---
+  duration_ms: 33.577009
+  type: 'test'
+  ...
+# Subtest: Pinned brief CAS and updates produce no automatic notifications
+ok 30 - Pinned brief CAS and updates produce no automatic notifications
+  ---
+  duration_ms: 17.195325
+  type: 'test'
+  ...
+# Subtest: File reports are own-recipient CAS, author-visible and other-recipient private
+ok 31 - File reports are own-recipient CAS, author-visible and other-recipient private
+  ---
+  duration_ms: 29.60228
+  type: 'test'
+  ...
+# Subtest: Markdown export keeps content inert and escapes author text
+ok 32 - Markdown export keeps content inert and escapes author text
+  ---
+  duration_ms: 14.051721
+  type: 'test'
+  ...
+# Subtest: Follow matrix all/ordinary
+ok 33 - Follow matrix all/ordinary
+  ---
+  duration_ms: 18.070525
+  type: 'test'
+  ...
+# Subtest: Follow matrix all/mention
+ok 34 - Follow matrix all/mention
+  ---
+  duration_ms: 15.242323
+  type: 'test'
+  ...
+# Subtest: Follow matrix all/reply
+ok 35 - Follow matrix all/reply
+  ---
+  duration_ms: 14.961193
+  type: 'test'
+  ...
+# Subtest: Follow matrix all/request
+ok 36 - Follow matrix all/request
+  ---
+  duration_ms: 14.47845
+  type: 'test'
+  ...
+# Subtest: Follow matrix mentions/ordinary
+ok 37 - Follow matrix mentions/ordinary
+  ---
+  duration_ms: 16.224177
+  type: 'test'
+  ...
+# Subtest: Follow matrix mentions/mention
+ok 38 - Follow matrix mentions/mention
+  ---
+  duration_ms: 18.343745
+  type: 'test'
+  ...
+# Subtest: Follow matrix mentions/reply
+ok 39 - Follow matrix mentions/reply
+  ---
+  duration_ms: 20.902232
+  type: 'test'
+  ...
+# Subtest: Follow matrix mentions/request
+ok 40 - Follow matrix mentions/request
+  ---
+  duration_ms: 18.384148
+  type: 'test'
+  ...
+# Subtest: Follow matrix replies/ordinary
+ok 41 - Follow matrix replies/ordinary
+  ---
+  duration_ms: 18.903744
+  type: 'test'
+  ...
+# Subtest: Follow matrix replies/mention
+ok 42 - Follow matrix replies/mention
+  ---
+  duration_ms: 11.571121
+  type: 'test'
+  ...
+# Subtest: Follow matrix replies/reply
+ok 43 - Follow matrix replies/reply
+  ---
+  duration_ms: 15.555266
+  type: 'test'
+  ...
+# Subtest: Follow matrix replies/request
+ok 44 - Follow matrix replies/request
+  ---
+  duration_ms: 19.597823
+  type: 'test'
+  ...
+# Subtest: Follow matrix mute/ordinary
+ok 45 - Follow matrix mute/ordinary
+  ---
+  duration_ms: 15.483057
+  type: 'test'
+  ...
+# Subtest: Follow matrix mute/mention
+ok 46 - Follow matrix mute/mention
+  ---
+  duration_ms: 16.686118
+  type: 'test'
+  ...
+# Subtest: Follow matrix mute/reply
+ok 47 - Follow matrix mute/reply
+  ---
+  duration_ms: 23.87939
+  type: 'test'
+  ...
+# Subtest: Follow matrix mute/request
+ok 48 - Follow matrix mute/request
+  ---
+  duration_ms: 21.646828
+  type: 'test'
+  ...
+# Subtest: All four reasons OR together, sender excluded and text mentions inert
+ok 49 - All four reasons OR together, sender excluded and text mentions inert
+  ---
+  duration_ms: 23.978792
+  type: 'test'
+  ...
+# Subtest: Follow changes are prospective and do not alter old reason bits
+ok 50 - Follow changes are prospective and do not alter old reason bits
+  ---
+  duration_ms: 23.311496
+  type: 'test'
+  ...
+# (node:2195) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: Exact 20-table schema, STRICT tables, JSON, indexes, triggers, WAL and foreign keys
+ok 51 - Exact 20-table schema, STRICT tables, JSON, indexes, triggers, WAL and foreign keys
+  ---
+  duration_ms: 38.07514
+  type: 'test'
+  ...
+# Subtest: Schema rejects cross-agent attribution, bad payload root, duplicate sessions and paired NULL errors
+ok 52 - Schema rejects cross-agent attribution, bad payload root, duplicate sessions and paired NULL errors
+  ---
+  duration_ms: 53.86891
+  type: 'test'
+  ...
+# Subtest: Reapply known migration safely and reject changed checksums
+ok 53 - Reapply known migration safely and reject changed checksums
+  ---
+  duration_ms: 35.660669
+  type: 'test'
+  ...
+# Subtest: Unsupported future migration is rejected without executing it
+ok 54 - Unsupported future migration is rejected without executing it
+  ---
+  duration_ms: 9.949054
+  type: 'test'
+  ...
+# Subtest: Failed second migration rolls back only that migration completely
+ok 55 - Failed second migration rolls back only that migration completely
+  ---
+  duration_ms: 12.340425
+  type: 'test'
+  ...
+# Subtest: Failed success-audit write rolls back message attention receipt and write quota
+ok 56 - Failed success-audit write rolls back message attention receipt and write quota
+  ---
+  duration_ms: 14.131982
+  type: 'test'
+  ...
+# Subtest: Injected disk-full write fails safely and retry uses the same logical ID
+ok 57 - Injected disk-full write fails safely and retry uses the same logical ID
+  ---
+  duration_ms: 13.493974
+  type: 'test'
+  ...
+# Subtest: Failure after fan-out but before receipt leaves no partial effects
+ok 58 - Failure after fan-out but before receipt leaves no partial effects
+  ---
+  duration_ms: 14.37335
+  type: 'test'
+  ...
+# Subtest: Logical-write quotas survive restart and another key cannot bypass them
+ok 59 - Logical-write quotas survive restart and another key cannot bypass them
+  ---
+  duration_ms: 20.782772
+  type: 'test'
+  ...
+# Subtest: Quotas are per-key and stable-agent for ordinary requests
+ok 60 - Quotas are per-key and stable-agent for ordinary requests
+  ---
+  duration_ms: 13.053137
+  type: 'test'
+  ...
+# Subtest: Active key and room membership limits enforced
+ok 61 - Active key and room membership limits enforced
+  ---
+  duration_ms: 21.648906
+  type: 'test'
+  ...
+# Subtest: Backup verifies and preserves IDs ACKs profiles checkpoints receipts and revoked key state
+ok 62 - Backup verifies and preserves IDs ACKs profiles checkpoints receipts and revoked key state
+  ---
+  duration_ms: 63.218264
+  type: 'test'
+  ...
+# Subtest: Offline restore revokes every restored active key including pre-revocation backups
+ok 63 - Offline restore revokes every restored active key including pre-revocation backups
+  ---
+  duration_ms: 58.958893
+  type: 'test'
+  ...
+# Subtest: Restore refuses active service lock, corrupt backup and preserves existing destination
+ok 64 - Restore refuses active service lock, corrupt backup and preserves existing destination
+  ---
+  duration_ms: 85.751929
+  type: 'test'
+  ...
+# Subtest: Service lock is exclusive and missing durable directory is rejected
+ok 65 - Service lock is exclusive and missing durable directory is rejected
+  ---
+  duration_ms: 5.413373
+  type: 'test'
+  ...
+# Subtest: Maintenance prunes only explicitly old audit/quota and obsolete receipts, not history
+ok 66 - Maintenance prunes only explicitly old audit/quota and obsolete receipts, not history
+  ---
+  duration_ms: 20.834248
+  type: 'test'
+  ...
+# Subtest: Bulk ACK is atomic when one item belongs to a different agent
+ok 67 - Bulk ACK is atomic when one item belongs to a different agent
+  ---
+  duration_ms: 15.599252
+  type: 'test'
+  ...
+# Subtest: Room target validation rejects former disabled nonmember and self recipients as a whole
+ok 68 - Room target validation rejects former disabled nonmember and self recipients as a whole
+  ---
+  duration_ms: 33.355097
+  type: 'test'
+  ...
+# Subtest: Bounded file report previews expose explicit continuation and preserve privacy
+ok 69 - Bounded file report previews expose explicit continuation and preserve privacy
+  ---
+  duration_ms: 43.956895
+  type: 'test'
+  ...
+# Subtest: Seeded randomized joins removals sends follow ACK retries checkpoint saves match a reference model
+ok 70 - Seeded randomized joins removals sends follow ACK retries checkpoint saves match a reference model
+  ---
+  duration_ms: 166.621137
+  type: 'test'
+  ...
+# (node:2240) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: Sparse ascending inbox scan returns every row without duplicates
+ok 71 - Sparse ascending inbox scan returns every row without duplicates
+  ---
+  duration_ms: 73.017308
+  type: 'test'
+  ...
+# Subtest: Snapshot upper stays fixed across new inserts; completed resume sees only new arrivals
+ok 72 - Snapshot upper stays fixed across new inserts; completed resume sees only new arrivals
+  ---
+  duration_ms: 26.841013
+  type: 'test'
+  ...
+# Subtest: Byte-limited pages neither skip nor receipt truncated items
+ok 73 - Byte-limited pages neither skip nor receipt truncated items
+  ---
+  duration_ms: 51.487114
+  type: 'test'
+  ...
+# Subtest: Empty exhausted unread page safely advances to its upper
+ok 74 - Empty exhausted unread page safely advances to its upper
+  ---
+  duration_ms: 21.923302
+  type: 'test'
+  ...
+# Subtest: ACK between snapshot pages removes only unread eligibility, not history
+ok 75 - ACK between snapshot pages removes only unread eligibility, not history
+  ---
+  duration_ms: 39.276712
+  type: 'test'
+  ...
+# Subtest: Cursor agent/filter/version/range tampering is rejected
+ok 76 - Cursor agent/filter/version/range tampering is rejected
+  ---
+  duration_ms: 16.021441
+  type: 'test'
+  ...
+# Subtest: Sequences above Number.MAX_SAFE_INTEGER round-trip without loss
+ok 77 - Sequences above Number.MAX_SAFE_INTEGER round-trip without loss
+  ---
+  duration_ms: 16.883281
+  type: 'test'
+  ...
+# Subtest: Outgoing multi-recipient requests retain composite cursor tie and completed resume
+ok 78 - Outgoing multi-recipient requests retain composite cursor tie and completed resume
+  ---
+  duration_ms: 27.949295
+  type: 'test'
+  ...
+# Subtest: New session fresh inbox ignores advisory checkpoint cursors
+ok 79 - New session fresh inbox ignores advisory checkpoint cursors
+  ---
+  duration_ms: 33.20823
+  type: 'test'
+  ...
+# Subtest: Removal and rejoin hide historical own posts and invalidate epoch cursors
+ok 80 - Removal and rejoin hide historical own posts and invalidate epoch cursors
+  ---
+  duration_ms: 57.566426
+  type: 'test'
+  ...
+# Subtest: Visible reply with hidden root never exposes ancestor identifiers or metadata
+ok 81 - Visible reply with hidden root never exposes ancestor identifiers or metadata
+  ---
+  duration_ms: 24.156951
+  type: 'test'
+  ...
+# Subtest: Current brief is onboarding-visible to new members but prior messages are not
+ok 82 - Current brief is onboarding-visible to new members but prior messages are not
+  ---
+  duration_ms: 21.999009
+  type: 'test'
+  ...
+# Subtest: Removal rechecks every read mutation and replay path
+ok 83 - Removal rechecks every read mutation and replay path
+  ---
+  duration_ms: 27.47829
+  type: 'test'
+  ...
+# Subtest: Archived rooms reject content/additions but allow history ACK follow reports and removal
+ok 84 - Archived rooms reject content/additions but allow history ACK follow reports and removal
+  ---
+  duration_ms: 22.822576
+  type: 'test'
+  ...
+# Subtest: Cross-room and cross-DM-participant replies rejected
+ok 85 - Cross-room and cross-DM-participant replies rejected
+  ---
+  duration_ms: 26.106662
+  type: 'test'
+  ...
+# Subtest: Export is partial when capped and membership revoke blocks next chunk
+ok 86 - Export is partial when capped and membership revoke blocks next chunk
+  ---
+  duration_ms: 29.708545
+  type: 'test'
+  ...
+# Subtest: Directory browse keyset handles duplicate names and rooms paginate by UUID
+ok 87 - Directory browse keyset handles duplicate names and rooms paginate by UUID
+  ---
+  duration_ms: 26.070637
+  type: 'test'
+  ...
+# Subtest: Large legal message exports its Markdown without budgeting an unreturned duplicate DTO
+ok 88 - Large legal message exports its Markdown without budgeting an unreturned duplicate DTO
+  ---
+  duration_ms: 23.188012
+  type: 'test'
+  ...
+# Subtest: Tampered completed cursor cannot advance past the new stream upper or move backward
+ok 89 - Tampered completed cursor cannot advance past the new stream upper or move backward
+  ---
+  duration_ms: 18.986905
+  type: 'test'
+  ...
+# (node:2253) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: Generic AUTH_FAILED for not-a-key
+ok 90 - Generic AUTH_FAILED for not-a-key
+  ---
+  duration_ms: 15.711964
+  type: 'test'
+  ...
+# Subtest: Generic AUTH_FAILED for 00000000-0000-4000-8
+ok 91 - Generic AUTH_FAILED for 00000000-0000-4000-8
+  ---
+  duration_ms: 8.714864
+  type: 'test'
+  ...
+# Subtest: Generic AUTH_FAILED for Research
+ok 92 - Generic AUTH_FAILED for Research
+  ---
+  duration_ms: 8.232846
+  type: 'test'
+  ...
+# Subtest: Generic AUTH_FAILED for xxxxxxxxxxxxxxxxxxxx
+ok 93 - Generic AUTH_FAILED for xxxxxxxxxxxxxxxxxxxx
+  ---
+  duration_ms: 6.589846
+  type: 'test'
+  ...
+# Subtest: Generic AUTH_FAILED for box_v1.00000000-0000
+ok 94 - Generic AUTH_FAILED for box_v1.00000000-0000
+  ---
+  duration_ms: 12.6757
+  type: 'test'
+  ...
+# Subtest: NOT_PRIMED is required before non-Prime calls
+ok 95 - NOT_PRIMED is required before non-Prime calls
+  ---
+  duration_ms: 9.920927
+  type: 'test'
+  ...
+# Subtest: Expiry equality is expired, no-expiry remains valid
+ok 96 - Expiry equality is expired, no-expiry remains valid
+  ---
+  duration_ms: 10.352058
+  type: 'test'
+  ...
+# Subtest: Unknown selector and wrong high-entropy secret return same safe error
+ok 97 - Unknown selector and wrong high-entropy secret return same safe error
+  ---
+  duration_ms: 5.150747
+  type: 'test'
+  ...
+# Subtest: Disable/enable differs from irreversible key revocation
+ok 98 - Disable/enable differs from irreversible key revocation
+  ---
+  duration_ms: 15.6743
+  type: 'test'
+  ...
+# Subtest: Issue/replacement persist only digests and never recover one-time output
+ok 99 - Issue/replacement persist only digests and never recover one-time output
+  ---
+  duration_ms: 10.742754
+  type: 'test'
+  ...
+# Subtest: Revoke all closes all logical sessions and keeps mailbox/profile data
+ok 100 - Revoke all closes all logical sessions and keeps mailbox/profile data
+  ---
+  duration_ms: 14.757872
+  type: 'test'
+  ...
+# Subtest: Strict message schema rejects caller-owned author_agent_id
+ok 101 - Strict message schema rejects caller-owned author_agent_id
+  ---
+  duration_ms: 9.570507
+  type: 'test'
+  ...
+# Subtest: Strict message schema rejects caller-owned author_session_id
+ok 102 - Strict message schema rejects caller-owned author_session_id
+  ---
+  duration_ms: 8.050301
+  type: 'test'
+  ...
+# Subtest: Strict message schema rejects caller-owned created_at_ms
+ok 103 - Strict message schema rejects caller-owned created_at_ms
+  ---
+  duration_ms: 11.464942
+  type: 'test'
+  ...
+# Subtest: Strict message schema rejects caller-owned author_profile_version
+ok 104 - Strict message schema rejects caller-owned author_profile_version
+  ---
+  duration_ms: 13.027339
+  type: 'test'
+  ...
+# Subtest: Strict message schema rejects caller-owned notification_recipients
+ok 105 - Strict message schema rejects caller-owned notification_recipients
+  ---
+  duration_ms: 16.301299
+  type: 'test'
+  ...
+# Subtest: Strict message schema rejects caller-owned reason_bits
+ok 106 - Strict message schema rejects caller-owned reason_bits
+  ---
+  duration_ms: 10.390792
+  type: 'test'
+  ...
+# Subtest: Strict message schema rejects caller-owned membership_id
+ok 107 - Strict message schema rejects caller-owned membership_id
+  ---
+  duration_ms: 59.051859
+  type: 'test'
+  ...
+# Subtest: Strict message schema rejects caller-owned response_status
+ok 108 - Strict message schema rejects caller-owned response_status
+  ---
+  duration_ms: 12.375544
+  type: 'test'
+  ...
+# Subtest: Strict message schema rejects caller-owned thread_root_seq
+ok 109 - Strict message schema rejects caller-owned thread_root_seq
+  ---
+  duration_ms: 17.023868
+  type: 'test'
+  ...
+# Subtest: No MCP owner surface agent_create
+ok 110 - No MCP owner surface agent_create
+  ---
+  duration_ms: 7.48186
+  type: 'test'
+  ...
+# Subtest: No MCP owner surface key_issue
+ok 111 - No MCP owner surface key_issue
+  ---
+  duration_ms: 7.406072
+  type: 'test'
+  ...
+# Subtest: No MCP owner surface profile_put
+ok 112 - No MCP owner surface profile_put
+  ---
+  duration_ms: 7.07493
+  type: 'test'
+  ...
+# Subtest: No MCP owner surface room_add
+ok 113 - No MCP owner surface room_add
+  ---
+  duration_ms: 6.753362
+  type: 'test'
+  ...
+# Subtest: No MCP owner surface owner
+ok 114 - No MCP owner surface owner
+  ---
+  duration_ms: 6.446063
+  type: 'test'
+  ...
+# Subtest: No MCP owner surface run_sql
+ok 115 - No MCP owner surface run_sql
+  ---
+  duration_ms: 5.871167
+  type: 'test'
+  ...
+# Subtest: Forged owner context rejected
+ok 116 - Forged owner context rejected
+  ---
+  duration_ms: 0.28168
+  type: 'test'
+  ...
+# Subtest: Self directory update cannot mutate agent_id
+ok 117 - Self directory update cannot mutate agent_id
+  ---
+  duration_ms: 8.826528
+  type: 'test'
+  ...
+# Subtest: Self directory update cannot mutate listed
+ok 118 - Self directory update cannot mutate listed
+  ---
+  duration_ms: 16.601387
+  type: 'test'
+  ...
+# Subtest: Self directory update cannot mutate name
+ok 119 - Self directory update cannot mutate name
+  ---
+  duration_ms: 15.733465
+  type: 'test'
+  ...
+# Subtest: Self directory update cannot mutate soul_md
+ok 120 - Self directory update cannot mutate soul_md
+  ---
+  duration_ms: 14.939598
+  type: 'test'
+  ...
+# Subtest: Reject unsafe file reference http://example.com/a
+ok 121 - Reject unsafe file reference http://example.com/a
+  ---
+  duration_ms: 15.98916
+  type: 'test'
+  ...
+# Subtest: Reject unsafe file reference https://user:pass@example.com/a
+ok 122 - Reject unsafe file reference https://user:pass@example.com/a
+  ---
+  duration_ms: 12.301936
+  type: 'test'
+  ...
+# Subtest: Reject unsafe file reference https://example.com/a?x=1
+ok 123 - Reject unsafe file reference https://example.com/a?x=1
+  ---
+  duration_ms: 12.452151
+  type: 'test'
+  ...
+# Subtest: Reject unsafe file reference https://example.com/a\#f
+ok 124 - Reject unsafe file reference https://example.com/a\#f
+  ---
+  duration_ms: 12.493498
+  type: 'test'
+  ...
+# Subtest: Reject unsafe file reference data:text/plain,hello
+ok 125 - Reject unsafe file reference data:text/plain,hello
+  ---
+  duration_ms: 11.981041
+  type: 'test'
+  ...
+# Subtest: Reject unsafe file reference file:///etc/passwd
+ok 126 - Reject unsafe file reference file:///etc/passwd
+  ---
+  duration_ms: 14.243279
+  type: 'test'
+  ...
+# Subtest: Reject unsafe file reference https://127.0.0.1/a
+ok 127 - Reject unsafe file reference https://127.0.0.1/a
+  ---
+  duration_ms: 14.073846
+  type: 'test'
+  ...
+# Subtest: Reject unsafe file reference https://10.1.2.3/a
+ok 128 - Reject unsafe file reference https://10.1.2.3/a
+  ---
+  duration_ms: 13.665556
+  type: 'test'
+  ...
+# Subtest: Reject unsafe file reference https://192.168.0.1/a
+ok 129 - Reject unsafe file reference https://192.168.0.1/a
+  ---
+  duration_ms: 11.262448
+  type: 'test'
+  ...
+# Subtest: Reject unsafe file reference https://172.20.0.1/a
+ok 130 - Reject unsafe file reference https://172.20.0.1/a
+  ---
+  duration_ms: 9.496048
+  type: 'test'
+  ...
+# Subtest: Reject unsafe file reference https://169.254.169.254/a
+ok 131 - Reject unsafe file reference https://169.254.169.254/a
+  ---
+  duration_ms: 11.037342
+  type: 'test'
+  ...
+# Subtest: Reject unsafe file reference https://[::1]/a
+ok 132 - Reject unsafe file reference https://[::1]/a
+  ---
+  duration_ms: 12.352774
+  type: 'test'
+  ...
+# Subtest: Reject unsafe file reference https://[::ffff:127.0.0.1]/a
+ok 133 - Reject unsafe file reference https://[::ffff:127.0.0.1]/a
+  ---
+  duration_ms: 9.399607
+  type: 'test'
+  ...
+# Subtest: Reject unsafe file reference https://2130706433/a
+ok 134 - Reject unsafe file reference https://2130706433/a
+  ---
+  duration_ms: 8.667045
+  type: 'test'
+  ...
+# Subtest: Reject unsafe file reference https://localhost/a
+ok 135 - Reject unsafe file reference https://localhost/a
+  ---
+  duration_ms: 9.636764
+  type: 'test'
+  ...
+# Subtest: Reject unsafe file reference https://example.com/token=abc
+ok 136 - Reject unsafe file reference https://example.com/token=abc
+  ---
+  duration_ms: 9.995029
+  type: 'test'
+  ...
+# Subtest: Reject unsafe file reference https://example.com/%74oken%3Dabc
+ok 137 - Reject unsafe file reference https://example.com/%74oken%3Dabc
+  ---
+  duration_ms: 9.660142
+  type: 'test'
+  ...
+# Subtest: Reject unsafe file reference https://example.com/a?
+ok 138 - Reject unsafe file reference https://example.com/a?
+  ---
+  duration_ms: 8.944015
+  type: 'test'
+  ...
+# Subtest: Reject unsafe file reference https://example.com/a\#
+ok 139 - Reject unsafe file reference https://example.com/a\#
+  ---
+  duration_ms: 11.216489
+  type: 'test'
+  ...
+# Subtest: Reject extensible JSON credential/binary key __proto__
+ok 140 - Reject extensible JSON credential/binary key __proto__
+  ---
+  duration_ms: 9.65465
+  type: 'test'
+  ...
+# Subtest: Reject extensible JSON credential/binary key constructor
+ok 141 - Reject extensible JSON credential/binary key constructor
+  ---
+  duration_ms: 13.068407
+  type: 'test'
+  ...
+# Subtest: Reject extensible JSON credential/binary key api_key
+ok 142 - Reject extensible JSON credential/binary key api_key
+  ---
+  duration_ms: 9.044298
+  type: 'test'
+  ...
+# Subtest: Reject extensible JSON credential/binary key secret
+ok 143 - Reject extensible JSON credential/binary key secret
+  ---
+  duration_ms: 9.22193
+  type: 'test'
+  ...
+# Subtest: Reject extensible JSON credential/binary key box_key
+ok 144 - Reject extensible JSON credential/binary key box_key
+  ---
+  duration_ms: 8.519757
+  type: 'test'
+  ...
+# Subtest: Reject extensible JSON credential/binary key base64
+ok 145 - Reject extensible JSON credential/binary key base64
+  ---
+  duration_ms: 8.89447
+  type: 'test'
+  ...
+# Subtest: Reject extensible JSON credential/binary key attachments
+ok 146 - Reject extensible JSON credential/binary key attachments
+  ---
+  duration_ms: 8.00376
+  type: 'test'
+  ...
+# Subtest: Reject extensible JSON credential/binary key file_bytes
+ok 147 - Reject extensible JSON credential/binary key file_bytes
+  ---
+  duration_ms: 9.661851
+  type: 'test'
+  ...
+# Subtest: Reject extensible JSON credential/binary key authorization
+ok 148 - Reject extensible JSON credential/binary key authorization
+  ---
+  duration_ms: 10.593054
+  type: 'test'
+  ...
+# Subtest: Reject extensible JSON credential/binary key access_token
+ok 149 - Reject extensible JSON credential/binary key access_token
+  ---
+  duration_ms: 10.460444
+  type: 'test'
+  ...
+# Subtest: All credential-bearing content fields reject recognizable Box Keys without echo
+ok 150 - All credential-bearing content fields reject recognizable Box Keys without echo
+  ---
+  duration_ms: 22.788163
+  type: 'test'
+  ...
+# Subtest: Audit and receipt allowlists exclude keys digests bodies links profiles and checkpoints
+ok 151 - Audit and receipt allowlists exclude keys digests bodies links profiles and checkpoints
+  ---
+  duration_ms: 26.683257
+  type: 'test'
+  ...
+# Subtest: UTF-8 byte caps, not character counts, govern messages
+ok 152 - UTF-8 byte caps, not character counts, govern messages
+  ---
+  duration_ms: 20.074916
+  type: 'test'
+  ...
+# Subtest: Deep JSON and aggregate envelope overflow are rejected
+ok 153 - Deep JSON and aggregate envelope overflow are rejected
+  ---
+  duration_ms: 12.071729
+  type: 'test'
+  ...
+# Subtest: Nonobject payload, duplicate targets, self targets and invalid recipient are atomic failures
+ok 154 - Nonobject payload, duplicate targets, self targets and invalid recipient are atomic failures
+  ---
+  duration_ms: 28.291175
+  type: 'test'
+  ...
+# Subtest: Final deliverable must have version/hash/commit metadata
+ok 155 - Final deliverable must have version/hash/commit metadata
+  ---
+  duration_ms: 12.313867
+  type: 'test'
+  ...
+# Subtest: No URL fetching or automatic action from malicious message contents
+ok 156 - No URL fetching or automatic action from malicious message contents
+  ---
+  duration_ms: 14.758397
+  type: 'test'
+  ...
+# Subtest: Bounded pre-auth buckets, expiry cleanup, and rejected new-address flood
+ok 157 - Bounded pre-auth buckets, expiry cleanup, and rejected new-address flood
+  ---
+  duration_ms: 0.338487
+  type: 'test'
+  ...
+# Subtest: Configuration requires durable explicit path and public-bind allowlist
+ok 158 - Configuration requires durable explicit path and public-bind allowlist
+  ---
+  duration_ms: 0.351909
+  type: 'test'
+  ...
+# Subtest: Configured message and ACK caps are applied in addition to schema caps
+ok 159 - Configured message and ACK caps are applied in addition to schema caps
+  ---
+  duration_ms: 29.169992
+  type: 'test'
+  ...
+# Subtest: Schedule execution fields and invalid IANA zones are rejected
+ok 160 - Schedule execution fields and invalid IANA zones are rejected
+  ---
+  duration_ms: 70.954221
+  type: 'test'
+  ...
+# Subtest: Outbound contracts reject extra private fields before committing retrieval receipts
+ok 161 - Outbound contracts reject extra private fields before committing retrieval receipts
+  ---
+  duration_ms: 233.127997
+  type: 'test'
+  ...
+# Subtest: JSON-escaped owner profiles cannot make legal Prime context exceed the response cap
+ok 162 - JSON-escaped owner profiles cannot make legal Prime context exceed the response cap
+  ---
+  duration_ms: 33.115873
+  type: 'test'
+  ...
+# Subtest: Directory capability JSON byte cap is validated before touching its stored projection
+ok 163 - Directory capability JSON byte cap is validated before touching its stored projection
+  ---
+  duration_ms: 29.559933
+  type: 'test'
+  ...
+1..163
+# tests 163
+# suites 0
+# pass 163
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 2640.713953

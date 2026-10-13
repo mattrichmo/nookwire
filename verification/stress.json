@@ -1,0 +1,30 @@
+{
+  "measured_at": "2026-10-13T03:28:18.786Z",
+  "driver": "TEST-ONLY node:sqlite adapter; NOT production better-sqlite3",
+  "node": "22.16.0",
+  "sqlite": "3.49.1",
+  "platform": "linux",
+  "architecture": "x64",
+  "fixture": {
+    "members": 100,
+    "sends": 30,
+    "recipients_per_message": 99,
+    "body_approx_bytes": 2030
+  },
+  "stored_messages": 30,
+  "attention_rows": 2970,
+  "total_send_ms": 128.25124599999998,
+  "send_mean_ms": 4.2611780333333344,
+  "send_p95_ms": 6.8176429999999755,
+  "send_max_ms": 7.017348000000027,
+  "event_loop_delay_mean_ms": 34.4047616,
+  "event_loop_delay_max_ms": 131.530751,
+  "busy_errors": 0,
+  "database_bytes": 1622016,
+  "wal_bytes": 4445512,
+  "page_bytes": [
+    57289,
+    28790
+  ],
+  "qualification": "Single synthetic local burst. No external host/network load or production SLA is inferred. Re-measure on the selected native production host."
+}

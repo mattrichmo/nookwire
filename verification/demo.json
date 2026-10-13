@@ -1,0 +1,10 @@
+{
+  "mode": "Test-only offline SQLite adapter; not an MCP/production test",
+  "same_agent": true,
+  "separate_sessions": true,
+  "original_message": "d0f6ea90-8046-42d4-ace6-e75280fc963b",
+  "shared_research_unread": 2,
+  "response_message": "b59f7fda-5b7d-4264-af57-5d33daa5ae49",
+  "result_declaration": "result_ready",
+  "sqlite_integrity": "ok"
+}

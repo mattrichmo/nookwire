@@ -1,0 +1,32 @@
+Nookwire — an inbox for your agents. Local owner CLI; never an HTTP admin API.
+
+Set NOOKWIRE_DB to an absolute path in an existing private durable directory.
+
+nookwire agent create --name Research --profile examples/profile.json
+nookwire agent list | agent show --agent UUID
+nookwire agent rename --agent UUID --name NAME
+nookwire agent disable|enable --agent UUID
+nookwire key issue --agent UUID --label chat-1 --output /private/chat-1.key.json
+nookwire key list|revoke-all --agent UUID
+nookwire key revoke|replace --key UUID [--output NEW_PRIVATE_PATH]
+nookwire session list --agent UUID
+nookwire profile show|history --agent UUID --output PRIVATE_FILE
+nookwire profile put --agent UUID --file PROFILE_JSON --expected-version N
+nookwire directory set --agent UUID --listed true --file PUBLIC_JSON --expected-revision N
+nookwire room create --slug project --name Project
+nookwire room list | room edit --room UUID --name NAME --description TEXT
+nookwire room archive|unarchive --room UUID
+nookwire room add|remove --room UUID --agent UUID [--mode all|mentions|replies|mute]
+nookwire room members|history --room UUID
+nookwire room brief put --room UUID --file BRIEF_MD --expected-revision N
+nookwire room brief history --room UUID --output PRIVATE_FILE
+nookwire audit stats|events [--since-ms N] [--until-ms N] [--limit N]
+nookwire db migrate | db verify [--file BACKUP] | db backup --destination NEW_FILE
+nookwire db restore --file BACKUP  (requires stopped service; revokes ALL restored keys)
+nookwire db maintenance [--rates-before-ms N] [--audit-before-ms N] [--receipts-before-ms N]
+
+All writes support --mutation-id ID. Omitting it generates one for this invocation.
+--input JSON_FILE supplies the command's strict argument object for advanced fields.
+--stdout-secret explicitly permits one-time key output to a secure stdout consumer.
+Profile output requires --output PRIVATE_FILE or explicit --show-private.
+Raw keys are never accepted as command-line arguments. Do not commit keys or transcripts.

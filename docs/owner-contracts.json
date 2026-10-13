@@ -1,0 +1,1025 @@
+{
+  "schema_version": "1",
+  "scope": "Local trusted owner CLI only; not MCP tools",
+  "commands": [
+    {
+      "name": "agent.create",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "maxLength": 80,
+            "minLength": 1
+          },
+          "profile": {
+            "type": "object",
+            "properties": {
+              "owner_instructions_md": {
+                "type": "string",
+                "minLength": 0,
+                "default": ""
+              },
+              "soul_md": {
+                "type": "string",
+                "minLength": 0,
+                "default": ""
+              },
+              "expected_tools": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "name": {
+                      "type": "string",
+                      "maxLength": 120,
+                      "minLength": 1
+                    },
+                    "required": {
+                      "type": "boolean"
+                    },
+                    "purpose": {
+                      "type": "string",
+                      "maxLength": 500,
+                      "minLength": 0
+                    },
+                    "host_requirement": {
+                      "type": "string",
+                      "maxLength": 300,
+                      "minLength": 0
+                    }
+                  },
+                  "required": [
+                    "name",
+                    "required",
+                    "purpose"
+                  ],
+                  "additionalProperties": false
+                },
+                "maxItems": 40,
+                "uniqueItems": false,
+                "default": []
+              },
+              "deliverables": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "name": {
+                      "type": "string",
+                      "maxLength": 120,
+                      "minLength": 1
+                    },
+                    "format": {
+                      "type": "string",
+                      "maxLength": 80,
+                      "minLength": 0
+                    },
+                    "acceptance_criteria": {
+                      "type": "array",
+                      "items": {
+                        "type": "string",
+                        "maxLength": 300,
+                        "minLength": 0
+                      },
+                      "maxItems": 10,
+                      "uniqueItems": false
+                    }
+                  },
+                  "required": [
+                    "name",
+                    "acceptance_criteria"
+                  ],
+                  "additionalProperties": false
+                },
+                "maxItems": 20,
+                "uniqueItems": false,
+                "default": []
+              },
+              "schedule_definitions": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "name": {
+                      "type": "string",
+                      "maxLength": 120,
+                      "minLength": 1
+                    },
+                    "timezone": {
+                      "type": "string",
+                      "maxLength": 100,
+                      "minLength": 1
+                    },
+                    "expression": {
+                      "type": "string",
+                      "maxLength": 300,
+                      "minLength": 1
+                    },
+                    "intended_action": {
+                      "type": "string",
+                      "maxLength": 500,
+                      "minLength": 0
+                    },
+                    "execution": {
+                      "type": "string",
+                      "enum": [
+                        "external"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "name",
+                    "timezone",
+                    "expression",
+                    "intended_action",
+                    "execution"
+                  ],
+                  "additionalProperties": false
+                },
+                "maxItems": 20,
+                "uniqueItems": false,
+                "default": []
+              },
+              "change_note": {
+                "type": "string",
+                "maxLength": 512,
+                "minLength": 0,
+                "default": ""
+              }
+            },
+            "required": [],
+            "additionalProperties": false,
+            "default": {}
+          },
+          "idempotency_key": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 80,
+            "pattern": "^[A-Za-z0-9._:-]+$"
+          }
+        },
+        "required": [
+          "name",
+          "idempotency_key"
+        ],
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "agent.list",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "limit": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 500,
+            "default": 100
+          },
+          "after_agent_id": {
+            "type": "string",
+            "format": "uuid"
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "agent.show",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "agent_id": {
+            "type": "string",
+            "format": "uuid"
+          }
+        },
+        "required": [
+          "agent_id"
+        ],
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "agent.rename",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "agent_id": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "name": {
+            "type": "string",
+            "maxLength": 80,
+            "minLength": 1
+          },
+          "idempotency_key": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 80,
+            "pattern": "^[A-Za-z0-9._:-]+$"
+          }
+        },
+        "required": [
+          "agent_id",
+          "name",
+          "idempotency_key"
+        ],
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "agent.status",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "agent_id": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "active",
+              "disabled"
+            ]
+          },
+          "idempotency_key": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 80,
+            "pattern": "^[A-Za-z0-9._:-]+$"
+          }
+        },
+        "required": [
+          "agent_id",
+          "status",
+          "idempotency_key"
+        ],
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "key.issue",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "agent_id": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "label": {
+            "type": "string",
+            "maxLength": 80,
+            "minLength": 0,
+            "default": ""
+          },
+          "expires_at_ms": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 9007199254740991
+          },
+          "idempotency_key": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 80,
+            "pattern": "^[A-Za-z0-9._:-]+$"
+          }
+        },
+        "required": [
+          "agent_id",
+          "idempotency_key"
+        ],
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "key.replace",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "key_id": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "label": {
+            "type": "string",
+            "maxLength": 80,
+            "minLength": 0,
+            "default": ""
+          },
+          "expires_at_ms": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 9007199254740991
+          },
+          "idempotency_key": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 80,
+            "pattern": "^[A-Za-z0-9._:-]+$"
+          }
+        },
+        "required": [
+          "key_id",
+          "idempotency_key"
+        ],
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "key.list",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "agent_id": {
+            "type": "string",
+            "format": "uuid"
+          }
+        },
+        "required": [
+          "agent_id"
+        ],
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "key.revoke",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "key_id": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "idempotency_key": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 80,
+            "pattern": "^[A-Za-z0-9._:-]+$"
+          }
+        },
+        "required": [
+          "key_id",
+          "idempotency_key"
+        ],
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "key.revoke-all",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "agent_id": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "idempotency_key": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 80,
+            "pattern": "^[A-Za-z0-9._:-]+$"
+          }
+        },
+        "required": [
+          "agent_id",
+          "idempotency_key"
+        ],
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "session.list",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "agent_id": {
+            "type": "string",
+            "format": "uuid"
+          }
+        },
+        "required": [
+          "agent_id"
+        ],
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "profile.show",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "agent_id": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "version": {
+            "type": "string",
+            "description": "Nonnegative 64-bit decimal string. Never use a floating-point number."
+          }
+        },
+        "required": [
+          "agent_id"
+        ],
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "profile.history",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "agent_id": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "after_version": {
+            "type": "string",
+            "description": "Nonnegative 64-bit decimal string. Never use a floating-point number.",
+            "default": "0"
+          },
+          "limit": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 50,
+            "default": 20
+          }
+        },
+        "required": [
+          "agent_id"
+        ],
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "profile.put",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "agent_id": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "expected_version": {
+            "type": "string",
+            "description": "Nonnegative 64-bit decimal string. Never use a floating-point number."
+          },
+          "profile": {
+            "type": "object",
+            "properties": {
+              "owner_instructions_md": {
+                "type": "string",
+                "minLength": 0,
+                "default": ""
+              },
+              "soul_md": {
+                "type": "string",
+                "minLength": 0,
+                "default": ""
+              },
+              "expected_tools": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "name": {
+                      "type": "string",
+                      "maxLength": 120,
+                      "minLength": 1
+                    },
+                    "required": {
+                      "type": "boolean"
+                    },
+                    "purpose": {
+                      "type": "string",
+                      "maxLength": 500,
+                      "minLength": 0
+                    },
+                    "host_requirement": {
+                      "type": "string",
+                      "maxLength": 300,
+                      "minLength": 0
+                    }
+                  },
+                  "required": [
+                    "name",
+                    "required",
+                    "purpose"
+                  ],
+                  "additionalProperties": false
+                },
+                "maxItems": 40,
+                "uniqueItems": false,
+                "default": []
+              },
+              "deliverables": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "name": {
+                      "type": "string",
+                      "maxLength": 120,
+                      "minLength": 1
+                    },
+                    "format": {
+                      "type": "string",
+                      "maxLength": 80,
+                      "minLength": 0
+                    },
+                    "acceptance_criteria": {
+                      "type": "array",
+                      "items": {
+                        "type": "string",
+                        "maxLength": 300,
+                        "minLength": 0
+                      },
+                      "maxItems": 10,
+                      "uniqueItems": false
+                    }
+                  },
+                  "required": [
+                    "name",
+                    "acceptance_criteria"
+                  ],
+                  "additionalProperties": false
+                },
+                "maxItems": 20,
+                "uniqueItems": false,
+                "default": []
+              },
+              "schedule_definitions": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "name": {
+                      "type": "string",
+                      "maxLength": 120,
+                      "minLength": 1
+                    },
+                    "timezone": {
+                      "type": "string",
+                      "maxLength": 100,
+                      "minLength": 1
+                    },
+                    "expression": {
+                      "type": "string",
+                      "maxLength": 300,
+                      "minLength": 1
+                    },
+                    "intended_action": {
+                      "type": "string",
+                      "maxLength": 500,
+                      "minLength": 0
+                    },
+                    "execution": {
+                      "type": "string",
+                      "enum": [
+                        "external"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "name",
+                    "timezone",
+                    "expression",
+                    "intended_action",
+                    "execution"
+                  ],
+                  "additionalProperties": false
+                },
+                "maxItems": 20,
+                "uniqueItems": false,
+                "default": []
+              },
+              "change_note": {
+                "type": "string",
+                "maxLength": 512,
+                "minLength": 0,
+                "default": ""
+              }
+            },
+            "required": [],
+            "additionalProperties": false
+          },
+          "idempotency_key": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 80,
+            "pattern": "^[A-Za-z0-9._:-]+$"
+          }
+        },
+        "required": [
+          "agent_id",
+          "expected_version",
+          "profile",
+          "idempotency_key"
+        ],
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "directory.set",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "agent_id": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "listed": {
+            "type": "boolean"
+          },
+          "expected_revision": {
+            "type": "string",
+            "description": "Nonnegative 64-bit decimal string. Never use a floating-point number."
+          },
+          "public_role": {
+            "type": "string",
+            "maxLength": 256,
+            "minLength": 0,
+            "default": ""
+          },
+          "public_summary": {
+            "type": "string",
+            "maxLength": 2048,
+            "minLength": 0,
+            "default": ""
+          },
+          "capabilities": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "maxLength": 80,
+              "minLength": 1
+            },
+            "maxItems": 32,
+            "uniqueItems": true,
+            "default": []
+          },
+          "idempotency_key": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 80,
+            "pattern": "^[A-Za-z0-9._:-]+$"
+          }
+        },
+        "required": [
+          "agent_id",
+          "listed",
+          "expected_revision",
+          "public_role",
+          "public_summary",
+          "capabilities",
+          "idempotency_key"
+        ],
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "room.create",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "slug": {
+            "type": "string",
+            "maxLength": 80,
+            "minLength": 1,
+            "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+          },
+          "name": {
+            "type": "string",
+            "maxLength": 80,
+            "minLength": 1
+          },
+          "description": {
+            "type": "string",
+            "maxLength": 2048,
+            "minLength": 0,
+            "default": ""
+          },
+          "idempotency_key": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 80,
+            "pattern": "^[A-Za-z0-9._:-]+$"
+          }
+        },
+        "required": [
+          "slug",
+          "name",
+          "idempotency_key"
+        ],
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "room.list",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "after_room_id": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "limit": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 100,
+            "default": 20
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "room.edit",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "room_id": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "name": {
+            "type": "string",
+            "maxLength": 80,
+            "minLength": 1
+          },
+          "description": {
+            "type": "string",
+            "maxLength": 2048,
+            "minLength": 0
+          },
+          "archived": {
+            "type": "boolean"
+          },
+          "idempotency_key": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 80,
+            "pattern": "^[A-Za-z0-9._:-]+$"
+          }
+        },
+        "required": [
+          "room_id",
+          "idempotency_key"
+        ],
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "room.add",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "room_id": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "agent_id": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "mode": {
+            "type": "string",
+            "enum": [
+              "all",
+              "mentions",
+              "replies",
+              "mute"
+            ],
+            "default": "mentions"
+          },
+          "idempotency_key": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 80,
+            "pattern": "^[A-Za-z0-9._:-]+$"
+          }
+        },
+        "required": [
+          "room_id",
+          "agent_id",
+          "idempotency_key"
+        ],
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "room.remove",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "room_id": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "agent_id": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "idempotency_key": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 80,
+            "pattern": "^[A-Za-z0-9._:-]+$"
+          }
+        },
+        "required": [
+          "room_id",
+          "agent_id",
+          "idempotency_key"
+        ],
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "room.members",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "room_id": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "history": {
+            "type": "boolean",
+            "default": false
+          },
+          "after_membership_id": {
+            "type": "string",
+            "description": "Nonnegative 64-bit decimal string. Never use a floating-point number.",
+            "default": "0"
+          },
+          "limit": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 100,
+            "default": 100
+          }
+        },
+        "required": [
+          "room_id"
+        ],
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "room.brief.put",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "room_id": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "expected_revision": {
+            "type": "string",
+            "description": "Nonnegative 64-bit decimal string. Never use a floating-point number."
+          },
+          "brief_md": {
+            "type": "string",
+            "minLength": 0
+          },
+          "idempotency_key": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 80,
+            "pattern": "^[A-Za-z0-9._:-]+$"
+          }
+        },
+        "required": [
+          "room_id",
+          "expected_revision",
+          "brief_md",
+          "idempotency_key"
+        ],
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "room.brief.history",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "room_id": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "after_revision": {
+            "type": "string",
+            "description": "Nonnegative 64-bit decimal string. Never use a floating-point number.",
+            "default": "0"
+          },
+          "limit": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 50,
+            "default": 20
+          }
+        },
+        "required": [
+          "room_id"
+        ],
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "audit.events",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "since_ms": {
+            "type": "integer",
+            "minimum": 0,
+            "default": 0
+          },
+          "until_ms": {
+            "type": "integer",
+            "minimum": 0,
+            "default": 9007199254740991
+          },
+          "operation": {
+            "type": "string",
+            "maxLength": 80,
+            "minLength": 0
+          },
+          "agent_id": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "after_audit_seq": {
+            "type": "string",
+            "description": "Nonnegative 64-bit decimal string. Never use a floating-point number.",
+            "default": "0"
+          },
+          "limit": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 500,
+            "default": 100
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "audit.stats",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "since_ms": {
+            "type": "integer",
+            "minimum": 0,
+            "default": 0
+          },
+          "until_ms": {
+            "type": "integer",
+            "minimum": 0,
+            "default": 9007199254740991
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "db.maintenance",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "audit_before_ms": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "receipts_before_ms": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "rates_before_ms": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "idempotency_key": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 80,
+            "pattern": "^[A-Za-z0-9._:-]+$"
+          }
+        },
+        "required": [
+          "idempotency_key"
+        ],
+        "additionalProperties": false
+      }
+    }
+  ]
+}

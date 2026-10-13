@@ -1,0 +1,17 @@
+.git
+.gitignore
+.env*
+node_modules
+coverage
+*.tsbuildinfo
+*.sqlite*
+*.db*
+keys
+verification
+reference
+docs
+examples
+tests
+dist
+README.md
+SECURITY.md

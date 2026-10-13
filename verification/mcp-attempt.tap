@@ -1,0 +1,73 @@
+TAP version 13
+# Subtest: Real Streamable HTTP: all registered tools and shared-connection acceptance story (legacy negotiation)
+not ok 1 - Real Streamable HTTP: all registered tools and shared-connection acceptance story (legacy negotiation)
+  ---
+  duration_ms: 4.709865
+  type: 'test'
+  location: '/mnt/data/nookwire/tests/mcp.test.mjs:55:5'
+  failureType: 'testCodeFailure'
+  error: 'MCP/native prerequisite BLOCKED: install the official SDK v2, Express, Zod and better-sqlite3 using npm run bootstrap. No real MCP call has been made.'
+  code: 'ERR_TEST_FAILURE'
+  stack: |-
+    sdk (file:///mnt/data/nookwire/tests/mcp.test.mjs:27:15)
+    async endpoint (file:///mnt/data/nookwire/tests/mcp.test.mjs:31:17)
+    async TestContext.<anonymous> (file:///mnt/data/nookwire/tests/mcp.test.mjs:56:42)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async startSubtestAfterBootstrap (node:internal/test_runner/harness:296:3)
+  ...
+# Subtest: Real Streamable HTTP: all registered tools and shared-connection acceptance story (auto negotiation)
+not ok 2 - Real Streamable HTTP: all registered tools and shared-connection acceptance story (auto negotiation)
+  ---
+  duration_ms: 1.805889
+  type: 'test'
+  location: '/mnt/data/nookwire/tests/mcp.test.mjs:55:5'
+  failureType: 'testCodeFailure'
+  error: 'MCP/native prerequisite BLOCKED: install the official SDK v2, Express, Zod and better-sqlite3 using npm run bootstrap. No real MCP call has been made.'
+  code: 'ERR_TEST_FAILURE'
+  stack: |-
+    sdk (file:///mnt/data/nookwire/tests/mcp.test.mjs:27:15)
+    async endpoint (file:///mnt/data/nookwire/tests/mcp.test.mjs:31:17)
+    async TestContext.<anonymous> (file:///mnt/data/nookwire/tests/mcp.test.mjs:56:42)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: Real HTTP protections, parser limits, safe errors and minimal health
+not ok 3 - Real HTTP protections, parser limits, safe errors and minimal health
+  ---
+  duration_ms: 2.059872
+  type: 'test'
+  location: '/mnt/data/nookwire/tests/mcp.test.mjs:139:1'
+  failureType: 'testCodeFailure'
+  error: 'MCP/native prerequisite BLOCKED: install the official SDK v2, Express, Zod and better-sqlite3 using npm run bootstrap. No real MCP call has been made.'
+  code: 'ERR_TEST_FAILURE'
+  stack: |-
+    sdk (file:///mnt/data/nookwire/tests/mcp.test.mjs:27:15)
+    async endpoint (file:///mnt/data/nookwire/tests/mcp.test.mjs:31:17)
+    async TestContext.<anonymous> (file:///mnt/data/nookwire/tests/mcp.test.mjs:140:29)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: Native CLI creates a private key file without printing its secret; restart shutdown is durable
+not ok 4 - Native CLI creates a private key file without printing its secret; restart shutdown is durable
+  ---
+  duration_ms: 3.41477
+  type: 'test'
+  location: '/mnt/data/nookwire/tests/mcp.test.mjs:159:1'
+  failureType: 'testCodeFailure'
+  error: 'MCP/native prerequisite BLOCKED: install the official SDK v2, Express, Zod and better-sqlite3 using npm run bootstrap. No real MCP call has been made.'
+  code: 'ERR_TEST_FAILURE'
+  stack: |-
+    sdk (file:///mnt/data/nookwire/tests/mcp.test.mjs:27:15)
+    async TestContext.<anonymous> (file:///mnt/data/nookwire/tests/mcp.test.mjs:160:5)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+1..4
+# tests 4
+# suites 0
+# pass 0
+# fail 4
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 127.195694

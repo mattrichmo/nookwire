@@ -1,0 +1,91 @@
+{
+  "artifact_version": "1.0.0-rc.1",
+  "generated_at": "2026-10-13T03:31:20.554775+00:00",
+  "release_qualified": false,
+  "runtime": {
+    "tested_node": "22.16.0",
+    "selected_production_node": "24.21.0",
+    "tested_sqlite": "3.49.1",
+    "tested_driver": "explicit test-only node:sqlite adapter",
+    "production_driver": "better-sqlite3 (not installed/tested)",
+    "typescript": "5.8.3",
+    "node_types_used_for_compilation": "24.0.4",
+    "platform": "linux x64"
+  },
+  "compilation": {
+    "build_exit_code": 0,
+    "typecheck_exit_code": 0,
+    "strict": true
+  },
+  "offline_tests": {
+    "tests": 163,
+    "pass": 163,
+    "fail": 0,
+    "cancelled": 0,
+    "skipped": 0,
+    "todo": 0
+  },
+  "mcp_integration": {
+    "attempted": true,
+    "test_cases": 4,
+    "passed": 0,
+    "blocked_at": "dependency prerequisite",
+    "exit_code": 1,
+    "actual_mcp_calls": 0
+  },
+  "actual_hosts": {
+    "chatgpt": "not exercised",
+    "claude": "not exercised"
+  },
+  "dependency_lock": "not generated; registry connectivity blocked",
+  "deployment": "not performed",
+  "production_credentials": "none created",
+  "schema": {
+    "tables_including_schema_migrations": 20,
+    "triggers": 9
+  },
+  "tools": {
+    "plan_tools": 22,
+    "additional_tools": [
+      "file_reports_list"
+    ]
+  },
+  "burst": {
+    "measured_at": "2026-10-13T03:28:18.786Z",
+    "driver": "TEST-ONLY node:sqlite adapter; NOT production better-sqlite3",
+    "node": "22.16.0",
+    "sqlite": "3.49.1",
+    "platform": "linux",
+    "architecture": "x64",
+    "fixture": {
+      "members": 100,
+      "sends": 30,
+      "recipients_per_message": 99,
+      "body_approx_bytes": 2030
+    },
+    "stored_messages": 30,
+    "attention_rows": 2970,
+    "total_send_ms": 128.25124599999998,
+    "send_mean_ms": 4.2611780333333344,
+    "send_p95_ms": 6.8176429999999755,
+    "send_max_ms": 7.017348000000027,
+    "event_loop_delay_mean_ms": 34.4047616,
+    "event_loop_delay_max_ms": 131.530751,
+    "busy_errors": 0,
+    "database_bytes": 1622016,
+    "wal_bytes": 4445512,
+    "page_bytes": [
+      57289,
+      28790
+    ],
+    "qualification": "Single synthetic local burst. No external host/network load or production SLA is inferred. Re-measure on the selected native production host."
+  },
+  "release_blockers": [
+    "Exact SDK/Zod/type pins and genuine package-lock.json",
+    "Production Node/native better-sqlite3 installation and full native suite",
+    "Official SDK HTTP/MCP, log/privacy and middleware qualification",
+    "Dependency vulnerability/supply-chain review",
+    "Real intended ChatGPT and Claude ordinary-tab acceptance",
+    "Target deployment/filesystem/proxy/backup qualification"
+  ]
+}

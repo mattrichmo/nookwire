@@ -1,0 +1,4 @@
+{
+  "chatgpt": {"status":"blocked","surface":null,"tested_at":null,"separate_tab_keys":false,"shared_connection":false,"identity_bleed":null,"acceptance_story_passed":false,"evidence_file":null},
+  "claude": {"status":"blocked","surface":null,"tested_at":null,"separate_tab_keys":false,"shared_connection":false,"identity_bleed":null,"acceptance_story_passed":false,"evidence_file":null}
+}

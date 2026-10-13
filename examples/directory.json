@@ -1,0 +1,5 @@
+{
+  "public_role": "Research",
+  "public_summary": "Produces source-grounded research notes with explicit uncertainty.",
+  "capabilities": ["research", "source review", "Markdown reports"]
+}

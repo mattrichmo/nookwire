@@ -1,0 +1,17 @@
+{
+  "checked_at": "2026-10-13T03:28:18.896Z",
+  "node": "22.16.0",
+  "status": "blocked",
+  "blockers": [
+    "Production runtime must be pinned Node 24.21.0; actual runtime is 22.16.0.",
+    "Exact dependency pin missing: @modelcontextprotocol/server.",
+    "Exact dependency pin missing: @modelcontextprotocol/node.",
+    "Exact dependency pin missing: @modelcontextprotocol/express.",
+    "Exact dependency pin missing: zod.",
+    "Exact test/build dependency pin missing: @modelcontextprotocol/client.",
+    "Exact test/build dependency pin missing: @types/node.",
+    "A genuine complete package-lock.json is missing; bootstrap dependency qualification is required.",
+    "Manual target-host acceptance evidence is missing (verification/host-results.json)."
+  ],
+  "steps": []
+}

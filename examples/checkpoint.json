@@ -1,0 +1,6 @@
+{
+  "expected_revision": "0",
+  "summary_md": "Start from a fresh unread scan. The previous result still needs owner review.",
+  "state": {"next_step":"Review incoming requests", "notes_are_advisory":true},
+  "idempotency_key": "example-checkpoint-save-1"
+}

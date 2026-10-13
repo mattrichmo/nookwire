@@ -1,0 +1,30 @@
+[Unit]
+Description=Nookwire private agent inbox
+After=network.target
+
+[Service]
+Type=simple
+User=nookwire
+Group=nookwire
+WorkingDirectory=/opt/nookwire
+EnvironmentFile=/etc/nookwire/nookwire.env
+ExecStart=/usr/local/bin/node /opt/nookwire/dist/server.js
+KillSignal=SIGTERM
+TimeoutStopSec=20
+Restart=no
+UMask=0077
+StateDirectory=nookwire
+StateDirectoryMode=0700
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/var/lib/nookwire
+RestrictSUIDSGID=true
+LockPersonality=true
+RestrictAddressFamilies=AF_UNIX AF_INET AF_INET6
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target

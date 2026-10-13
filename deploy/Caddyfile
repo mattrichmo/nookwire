@@ -1,0 +1,14 @@
+# Replace the hostname. Do not enable access/body/argument tracing.
+# This is an example for an owner-approved TLS deployment, not a deployment action.
+nookwire.example.com {
+    @mcp path /mcp
+    handle @mcp {
+        reverse_proxy 127.0.0.1:8787 {
+            flush_interval -1
+        }
+    }
+    # Health remains local; there is no public owner/diagnostics endpoint.
+    handle {
+        respond "Not found" 404
+    }
+}
