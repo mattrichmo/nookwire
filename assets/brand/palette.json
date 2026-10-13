@@ -1,0 +1,20 @@
+{
+  "name": "Nookwire",
+  "theme": "Private signal network",
+  "colors": {
+    "ink": "#101A2F",
+    "ink_deep": "#071122",
+    "surface": "#19264B",
+    "lilac": "#C9AAFF",
+    "indigo": "#717AFC",
+    "electric": "#2565FF",
+    "aqua": "#64D6E8",
+    "offwhite": "#F6F7FF",
+    "light_surface": "#F4F3FF"
+  },
+  "type": {
+    "display": "Inter Display (or system sans-serif)",
+    "body": "Inter (or system sans-serif)"
+  },
+  "brand_guideline": "Use the Nookwire mark only. Do not imply endorsement by ChatGPT, OpenAI, Claude or any MCP host."
+}
